@@ -4,7 +4,7 @@ The current project provides a sample **RDF validator configuration** for the fi
 The validator realises the demo scenario considered in the Test Bed's [RDF validation guide](https://www.itb.ec.europa.eu/docs/guides/latest/validatingRDF/index.html). You may check this out for the full description of this repository's resources and 
 validator configuration. 
 
-The live validator defined through this configuration is available [here](https://www.itb.ec.europa.eu/shacl/order/upload). 
+The live validator defined through this configuration is available [here](https://www.itb.ec.europa.eu/shacl/order/upload).
 
 # Licence
 

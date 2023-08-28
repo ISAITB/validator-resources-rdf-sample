@@ -14,4 +14,28 @@ po:minimumItemsForLargeOrderShape
 	a sh:PropertyShape ;
 	sh:path po:quantity ;
 	sh:minExclusive 10 ;
+	sh:message "The quantities of items for large orders must be greater than 10."@en;
+	sh:message "Количествата на артикулите за големи поръчки трябва да бъдат повече от 10."@bg;
+	sh:message "Las cantidades de artículos para pedidos grandes deben ser mayores de 10."@es;
+	sh:message "Množství položek pro velké objednávky musí být větší než 10."@cs;
+	sh:message "Mængden af varer til store ordrer skal være større end 10."@da;
+	sh:message "Die Mengen an Artikeln für große Bestellungen müssen größer als 10 sein."@de;
+	sh:message "Suurte tellimuste kaupade kogused peavad olema suuremad kui 10."@et;
+	sh:message "Οι ποσότητες των ειδών για μεγάλες παραγγελίες πρέπει να είναι μεγαλύτερες από 10."@el;
+	sh:message "Les quantités d'articles pour les grandes commandes doivent être supérieures à 10."@fr;
+	sh:message "Caithfidh na huimhreacha d'earraí do chuid orduithe móra bheith níos mó ná 10."@ga;
+	sh:message "Količine predmeta za velike narudžbe moraju biti veće od 10."@hr;
+	sh:message "Le quantità di articoli per grandi ordini devono essere superiori a 10."@it;
+	sh:message "Lielu pasūtījumu daudzumiem jābūt lielākiem par 10."@lv;
+	sh:message "Dideliems užsakymams prekių kiekiai turi būti didesni nei 10."@lt;
+	sh:message "A nagy rendelések termékeinek mennyisége nagyobb kell legyen, mint 10."@hu;
+	sh:message "Il-kwantitajiet ta' oġġetti għal ordni kbir għandhom ikunu akbar minn 10."@mt;
+	sh:message "De hoeveelheden van items voor grote bestellingen moeten groter zijn dan 10."@nl;
+	sh:message "Ilość przedmiotów w dużych zamówieniach musi być większa niż 10."@pl;
+	sh:message "As quantidades de itens para grandes encomendas devem ser maiores que 10."@pt;
+	sh:message "Cantitățile de articole pentru comenzi mari trebuie să fie mai mari de 10."@ro;
+	sh:message "Množstvá položiek pre veľké objednávky musia byť väčšie ako 10."@sk;
+	sh:message "Količine predmetov za velika naročila morajo biti večje od 10."@sl;
+	sh:message "Suurten tilausten tuotteiden määrien on oltava suurempia kuin 10."@fi;
+	sh:message "Kvantiteterna av föremål för stora beställningar måste vara större än 10."@sv;
 	sh:severity sh:Violation .

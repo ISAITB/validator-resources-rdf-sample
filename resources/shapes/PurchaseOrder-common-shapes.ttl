@@ -20,6 +20,29 @@ po:shipToShape
 	sh:minCount 1 ;
 	sh:maxCount 1 ;
 	sh:class locn:Address ;
+	sh:message "The order must include exactly one shipping address (shipToShape)."@en;
+	sh:message "El pedido debe incluir exactamente una dirección de envío (shipToShape)."@es;
+	sh:message "Objednávka musí obsahovat právě jednu doručovací adresu (shipToShape)."@cs;
+	sh:message "Ordren skal indeholde præcis én leveringsadresse (shipToShape)."@da;
+	sh:message "Die Bestellung muss genau eine Versandadresse enthalten (shipToShape)."@de;
+	sh:message "Tellimus peab sisaldama täpselt ühte saatmisadresse (shipToShape)."@et;
+	sh:message "Η παραγγελία πρέπει να περιλαμβάνει ακριβώς μία διεύθυνση αποστολής (shipToShape)."@el;
+	sh:message "La commande doit inclure exactement une adresse de livraison (shipToShape)."@fr;
+	sh:message "Ní mór go mbeadh aon seoladh loingseoireachta amháin san ordú (shipToShape)."@ga;
+	sh:message "Narudžba mora uključivati točno jednu adresu za dostavu (shipToShape)."@hr;
+	sh:message "L'ordine deve includere esattamente un indirizzo di spedizione (shipToShape)."@it;
+	sh:message "Pasūtījumam jāiekļauj tieši viena piegādes adrese (shipToShape)."@lv;
+	sh:message "Užsakymas turi būti sudarytas iš vienos pristatymo vietos (shipToShape)."@lt;
+	sh:message "A nagy rendelések termékeinek mennyisége nagyobb kell legyen, mint 10."@hu;
+	sh:message "Il-kwantitajiet ta' oġġetti għal ordni kbir għandhom ikunu akbar minn 10."@mt;
+	sh:message "De bestelling moet precies één verzendadres bevatten (shipToShape)."@nl;
+	sh:message "Ilość przedmiotów w dużych zamówieniach musi być większa niż 10."@pl;
+	sh:message "A encomenda deve incluir exatamente um endereço de entrega (shipToShape)."@pt;
+	sh:message "Comanda trebuie să includă exact o adresă de livrare (shipToShape)."@ro;
+	sh:message "Objednávka musí obsahovať práve jednu doručovaciu adresu (shipToShape)."@sk;
+	sh:message "Naročilo mora vsebovati natanko en naslov za dostavo (shipToShape)."@sl;
+	sh:message "Tilauksen on sisällettävä tarkalleen yksi toimitusosoite (shipToShape)."@fi;
+	sh:message "Beställningen måste inkludera exakt en leveransadress (shipToShape)."@sv;
 	sh:severity sh:Violation .
 
 po:billToShape
@@ -27,13 +50,53 @@ po:billToShape
 	sh:path po:billTo ;
 	sh:class locn:Address ;
 	sh:maxCount 1 ;
+	sh:message "The order must not include more than one billing address (billToShape)."@en;
+	sh:message "El pedido no debe incluir más de una dirección de facturación (billToShape)."@es;
+	sh:message "Objednávka nesmí obsahovat více než jednu fakturační adresu (billToShape)."@cs;
+	sh:message "Ordren må ikke indeholde mere end én faktureringsadresse (billToShape)."@da;
+	sh:message "Die Bestellung darf nicht mehr als eine Rechnungsadresse enthalten (billToShape)."@de;
+	sh:message "Tellimus ei tohi sisaldada rohkem kui ühte arve aadressi (billToShape)."@et;
+	sh:message "Η παραγγελία δεν πρέπει να περιλαμβάνει περισσότερες από μία διεύθυνση χρέωσης (billToShape)."@el;
+	sh:message "La commande ne doit pas inclure plus d'une adresse de facturation (billToShape)."@fr;
+	sh:message "Ní mór go mbeadh níos mó ná seoladh bhilleála amháin san ordú (billToShape)."@ga;
+	sh:message "Narudžba ne smije sadržavati više od jedne adrese za naplatu (billToShape)."@hr;
+	sh:message "L'ordine non deve includere più di un indirizzo di fatturazione (billToShape)."@it;
+	sh:message "Il-kontijiet ma għandhomx ikunu aktar minn indirizz għall-kontijiet waħdu (billToShape)."@mt;
+	sh:message "De bestelling mag niet meer dan één factuuradres bevatten (billToShape)."@nl;
+	sh:message "Zamówienie nie może zawierać więcej niż jednego adresu do faktury (billToShape)."@pl;
+	sh:message "A encomenda não deve incluir mais de um endereço de faturação (billToShape)."@pt;
+	sh:message "Comanda nu trebuie să includă mai mult de o adresă de facturare (billToShape)."@ro;
+	sh:message "Objednávka nesmie obsahovať viac ako jednu fakturačnú adresu (billToShape)."@sk;
+	sh:message "Naročilo ne sme vsebovati več kot enega naslova za obračun (billToShape)."@sl;
+	sh:message "Tilauksessa ei saa olla enempää kuin yksi laskutusosoite (billToShape)."@fi;
+	sh:message "Beställningen får inte inkludera mer än en faktureringsadress (billToShape)."@sv;
 	sh:severity sh:Violation .
 
- po:hasItemsShape
- 	a sh:PropertyShape ;
+po:hasItemsShape
+	a sh:PropertyShape ;
 	sh:path po:hasItem ;
 	sh:minCount 1 ;
 	sh:class po:Item ;
+	sh:message "The order must contain at least one item."@en;
+	sh:message "El pedido debe contener al menos un artículo."@es;
+	sh:message "Objednávka musí obsahovat nejméně jeden položku."@cs;
+	sh:message "Ordren skal indeholde mindst en vare."@da;
+	sh:message "Die Bestellung muss mindestens einen Artikel enthalten."@de;
+	sh:message "Tellimus peab sisaldama vähemalt ühe toote."@et;
+	sh:message "Η παραγγελία πρέπει να περιλαμβάνει τουλάχιστον ένα προϊόν."@el;
+	sh:message "La commande doit contenir au moins un article."@fr;
+	sh:message "Caithfidh an ordú a bheith ina mhoilligh ar a laghad rud amháin."@ga;
+	sh:message "Narudžba mora sadržavati najmanje jednu stavku."@hr;
+	sh:message "L'ordine deve contenere almeno un articolo."@it;
+	sh:message "L-ordni għandhom ikunu kbar minn artiklu wieħed."@mt;
+	sh:message "De bestelling moet minimaal één item bevatten."@nl;
+	sh:message "Zamówienie musi zawierać co najmniej jedną pozycję."@pl;
+	sh:message "A encomenda deve conter pelo menos um item."@pt;
+	sh:message "Comanda trebuie să conțină cel puțin un articol."@ro;
+	sh:message "Objednávka musí obsahovať aspoň jednu položku."@sk;
+	sh:message "Naročilo mora vsebovati vsaj en izdelek."@sl;
+	sh:message "Tilauksessa on oltava vähintään yksi tuote."@fi;
+	sh:message "Beställningen måste innehålla minst en artikel."@sv;
 	sh:severity sh:Violation .
 
 #
@@ -45,7 +108,27 @@ po:ItemShape
 	sh:targetClass po:Item ;
 	sh:property po:productNameShape ;
 	sh:property po:quantityShape ;
-	sh:property po:priceShape .
+	sh:property po:priceShape ;
+	sh:message "Items must have a name, quantity and price."@en ;
+	sh:message "Los artículos deben tener un nombre, cantidad y precio."@es ;
+	sh:message "Položky musí mít název, množství a cenu."@cs ;
+	sh:message "Varer skal have et navn, en mængde og en pris."@da ;
+	sh:message "Artikel müssen einen Namen, eine Menge und einen Preis haben."@de ;
+	sh:message "Esemed peavad olema nime, koguse ja hinnaga."@et ;
+	sh:message "Τα προϊόντα πρέπει να έχουν όνομα, ποσότητα και τιμή."@el ;
+	sh:message "Les articles doivent avoir un nom, une quantité et un prix."@fr ;
+	sh:message "Caithfidh ainm, méid agus praghas a bheith ag na hairteagail."@ga ;
+	sh:message "Stavke moraju imati ime, količinu i cijenu."@hr ;
+	sh:message "Gli articoli devono avere un nome, una quantità e un prezzo."@it ;
+	sh:message "Il-prodotti għandhom ikollhom isem, kwantità u prezz."@mt ;
+	sh:message "Items moeten een naam, hoeveelheid en prijs hebben."@nl ;
+	sh:message "Artykuły muszą mieć nazwę, ilość i cenę."@pl ;
+	sh:message "Os itens devem ter um nome, quantidade e preço."@pt ;
+	sh:message "Articolele trebuie să aibă un nume, o cantitate și un preț."@ro ;
+	sh:message "Položky musia mať názov, množstvo a cenu."@sk ;
+	sh:message "Stavke morajo imeti ime, količino in ceno."@sl ;
+	sh:message "Tuotteiden on oltava nimellä, määrällä ja hinnalla."@fi ;
+	sh:message "Artiklar måste ha ett namn, en kvantitet och ett pris."@sv .
 
 po:productNameShape
 	a sh:PropertyShape ;
@@ -53,6 +136,26 @@ po:productNameShape
 	sh:minCount 1 ;
 	sh:maxCount 1 ;
 	sh:nodeKind sh:Literal ;
+	sh:message "Items must have exactly one name field."@en;
+	sh:message "Los artículos deben tener exactamente un campo de nombre."@es;
+	sh:message "Položky musí mít právě jedno pole pro název."@cs;
+	sh:message "Varer skal have præcis ét navnefelt."@da;
+	sh:message "Artikel müssen genau ein Namensfeld haben."@de;
+	sh:message "Esemed peavad olema täpselt ühe nime väljaga."@et;
+	sh:message "Τα προϊόντα πρέπει να έχουν ακριβώς ένα πεδίο ονόματος."@el;
+	sh:message "Les articles doivent avoir exactement un champ de nom."@fr;
+	sh:message "Caithfidh ainm amháin a bheith ag na hairteagail."@ga;
+	sh:message "Stavke moraju imati točno jedno polje za naziv."@hr;
+	sh:message "Gli articoli devono avere esattamente un campo nome."@it;
+	sh:message "Il-prodotti għandhom ikollhom biss post ta' isem wieħed."@mt;
+	sh:message "Items moeten exact één naamveld hebben."@nl;
+	sh:message "Artykuły muszą mieć dokładnie jedno pole na nazwę."@pl;
+	sh:message "Os itens devem ter exatamente um campo de nome."@pt;
+	sh:message "Articolele trebuie să aibă exact un câmp pentru nume."@ro;
+	sh:message "Položky musia mať presne jedno pole na názov."@sk;
+	sh:message "Stavki morajo imeti natanko eno polje za ime."@sl;
+	sh:message "Tuotteiden on oltava tarkalleen yksi nimi-kenttä."@fi;
+	sh:message "Artiklarna måste ha exakt ett namnfält."@sv;
 	sh:severity sh:Violation .
 
 po:quantityShape
@@ -62,6 +165,26 @@ po:quantityShape
 	sh:maxCount 1 ;
 	sh:datatype xsd:integer ;
 	sh:minExclusive 0 ;
+	sh:message "Items must have exactly one quantity field."@en;
+	sh:message "Los artículos deben tener exactamente un campo de cantidad."@es;
+	sh:message "Položky musí mít právě jedno pole pro množství."@cs;
+	sh:message "Varer skal have præcis ét mængdefelt."@da;
+	sh:message "Artikel müssen genau ein Mengenfeld haben."@de;
+	sh:message "Esemed peavad olema täpselt ühe koguse väljaga."@et;
+	sh:message "Τα προϊόντα πρέπει να έχουν ακριβώς ένα πεδίο ποσότητας."@el;
+	sh:message "Les articles doivent avoir exactement un champ de quantité."@fr;
+	sh:message "Caithfidh ainm amháin a bheith ag na hairteagail."@ga;
+	sh:message "Stavke moraju imati točno jedno polje za količinu."@hr;
+	sh:message "Gli articoli devono avere esattamente un campo quantità."@it;
+	sh:message "Il-prodotti għandhom ikollhom biss post ta' kwantità wieħed."@mt;
+	sh:message "Items moeten exact één kwantiteitsveld hebben."@nl;
+	sh:message "Artykuły muszą mieć dokładnie jedno pole na ilość."@pl;
+	sh:message "Os itens devem ter exatamente um campo de quantidade."@pt;
+	sh:message "Articolele trebuie să aibă exact un câmp pentru cantitate."@ro;
+	sh:message "Položky musia mať presne jedno pole na množstvo."@sk;
+	sh:message "Stavki morajo imeti natanko eno polje za količino."@sl;
+	sh:message "Tuotteiden on oltava tarkalleen yksi määrä-kenttä."@fi;
+	sh:message "Artiklarna måste ha exakt ett kvantitetsfält."@sv;
 	sh:severity sh:Violation .
 
 po:priceShape
@@ -70,4 +193,24 @@ po:priceShape
 	sh:minCount 1 ;
 	sh:maxCount 1 ;
 	sh:datatype xsd:decimal ;
+	sh:message "Items must have exactly one price field."@en;
+	sh:message "Los artículos deben tener exactamente un campo de precio."@es;
+	sh:message "Položky musí mít právě jedno pole pro cenu."@cs;
+	sh:message "Varer skal have præcis ét prisfelt."@da;
+	sh:message "Artikel müssen genau ein Preisfeld haben."@de;
+	sh:message "Esemed peavad olema täpselt ühe hinnaga väljaga."@et;
+	sh:message "Τα προϊόντα πρέπει να έχουν ακριβώς ένα πεδίο τιμής."@el;
+	sh:message "Les articles doivent avoir exactement un champ de prix."@fr;
+	sh:message "Caithfidh ainm amháin a bheith ag na hairteagail."@ga;
+	sh:message "Stavke moraju imati točno jedno polje za cijenu."@hr;
+	sh:message "Gli articoli devono avere esattamente un campo prezzo."@it;
+	sh:message "Il-prodotti għandhom ikollhom biss post ta' prezz wieħed."@mt;
+	sh:message "Items moeten exact één prijsveld hebben."@nl;
+	sh:message "Artykuły muszą mieć dokładnie jedno pole na cenę."@pl;
+	sh:message "Os itens devem ter exatamente um campo de preço."@pt;
+	sh:message "Articolele trebuie să aibă exact un câmp pentru preț."@ro;
+	sh:message "Položky musia mať presne jedno pole na cenu."@sk;
+	sh:message "Stavki morajo imeti natanko eno polje za ceno."@sl;
+	sh:message "Tuotteiden on oltava tarkalleen yksi hinta-kenttä."@fi;
+	sh:message "Artiklarna måste ha exakt ett prisfält."@sv;
 	sh:severity sh:Violation .
